@@ -8,10 +8,10 @@ function Navbar() {
     <>
       <nav>
         <ul className={styles.menubar} >
-          {Navdata.map((data) => {
+          {Navdata.map((item) => {
             return (
               <li>
-                <Link href={data.path} activeClassName="active">{data.title}</Link>
+                <Link href={item.path} activeClassName="active">{item.title}</Link>
               </li>
             );
           })}
